@@ -1,0 +1,161 @@
+.job-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.job-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px; /* Restrict the card width */
+  flex: 1 1 calc(33.333% - 20px); /* Adjust as needed */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.job-card h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.job-card p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .job-card {
+    flex: 1 1 calc(50% - 20px); /* Two cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .job-card {
+    flex: 1 1 100%; /* One card per row on very small screens */
+  }
+}
+
+/* Job form */
+
+.profile_form_card{
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  margin-left: 350px;
+  margin-top: 60px;
+}
+
+.profile_form_card h1 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.profile_form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 550px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.profile_form .form_group {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile_form .form_group label {
+  font-size: 14px;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.profile_form .form_group input,
+.profile_form .form_group textarea {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.profile_form .form_group input:focus,
+.profile_form .form_group textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.profile_form .form_group input[type="file"] {
+  border: none;
+  padding: 0;
+}
+
+.profile_form .update_btn {
+  background-color: #2ecc71;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile_form .update_btn:hover {
+  background-color: #27ae60;
+}
+
+/* styles.module.css */
+.editForm {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.editForm h2 {
+  margin-bottom: 15px;
+}
+
+.editForm .form_group {
+  margin-bottom: 15px;
+}
+
+.editForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.editForm input,
+.editForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.editForm button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.editForm button:hover {
+  background-color: #45a049;
+}

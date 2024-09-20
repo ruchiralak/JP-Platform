@@ -1,0 +1,211 @@
+.signup_container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.signup_form_container {
+    width: 900px;
+    height: 550px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    overflow: hidden;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #3bb19b, #6e8efb);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 20px;
+}
+
+.left h1 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form_container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: #f7f8fc;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.input:focus {
+    border-color: #6e8efb;
+    background-color: #eef3fc;
+}
+
+.checkbox_container {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.checkbox_container input {
+    margin-right: 10px;
+    accent-color: #6e8efb;
+}
+
+.checkbox_container label {
+    font-size: 14px;
+    color: #666;
+}
+
+.error_msg {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f34646;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.white_btn,
+.green_btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.white_btn {
+    background-color: #fff;
+    color: #6e8efb;
+    border: 2px solid #6e8efb;
+}
+
+.white_btn:hover {
+    background-color: #6e8efb;
+    color: #fff;
+}
+
+.green_btn {
+    background-color: #6e8efb;
+    color: white;
+}
+
+.green_btn:hover {
+    background-color: #3bb19b;
+}
+
+/* Additional styling for select dropdown */
+.select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: #f7f8fc;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.select:focus {
+    border-color: #6e8efb;
+    background-color: #eef3fc;
+}
+.access-code-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.access-code-form label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.access-code-form input {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.access-code-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Space between buttons */
+}
+
+.access-code-form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+.access-code-form input {
+    padding: 12px;  /* Increased padding for a better touch target */
+    width: 80%;
+    max-width: 300px;
+    border: 2px solid #4CAF50;  /* Green border */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;  /* Increased font size */
+    transition: border-color 0.3s, box-shadow 0.3s;  /* Smooth transition effects */
+}
+
+.access-code-form input:focus {
+    border-color: #45a049;  /* Darker green when focused */
+    box-shadow: 0 0 5px rgba(72, 183, 90, 0.5);  /* Glow effect */
+    outline: none;  /* Remove default outline */
+}
+
+.access-code-form input::placeholder {
+    color: #aaa;  /* Placeholder text color */
+    font-style: italic;  /* Italicize placeholder text */
+}
